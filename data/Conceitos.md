@@ -3,7 +3,7 @@
 ## Classe
 - A classe se define  como uma estrutura mais abstrata que contem a "receita" para se construir um determinado Objeto.
 
-- Na classe são definidos os atributos do Objeto em questão e nela são feitos os Métodos que manipulam esses atributos 
+- Na classe são definidos os atributos do Objeto em questão e nela são desenvolvidos os Métodos que manipulam esses atributos em questão
 
 ## Objeto
 - O objeto se define como um tipo de dado que carrega atributos específicos e métodos de manipulação desses atributos, são resultados das implementações de uma classe específica
@@ -13,7 +13,7 @@
 ## Encapsulamento
 - O encapsulamento é um dos cernes da Programação Orientada Objeto que consiste em trazer mais robustez no código ao impedir o acesso e manipulação direta dos atributos de um Objeto
 
-- Para se ter encapsulamento criamos interfaces, ou seja, metodos que acessam e manipulam os atributos de uma forma mais específica e mais controlada
+- Para se ter encapsulamento declaramos atributos privados e criamos metodos públicos que acessam e manipulam os atributos de uma forma mais específica e mais controlada
 
 ## Construtor
 - É uma parte importante, apesar de opcional, no desenvolvimento de uma Classe
