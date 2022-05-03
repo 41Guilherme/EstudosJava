@@ -1,6 +1,13 @@
-del Main.class
+del *.class
 cd estudante
-del Estudante.class
-del Turma.class 
-del TesteUniversidade.class
+del *.class
 cd ..
+cd data 
+del *.class
+cd ..
+cd forms
+del *.class
+cd ..
+cd carbono 
+del *.class
+cd .. 
