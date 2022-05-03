@@ -1,8 +1,7 @@
 package estudante;
-
 import java.util.ArrayList;
 import java.util.List;
-
+import java.text.DecimalFormat;
 public class Turma {
     
     private List <Estudante> estudantes;
@@ -21,7 +20,14 @@ public class Turma {
             soma = soma + estudante.getNota();
             quantidade = quantidade + 1;
         }
-        this.setMediaNotaTurma(soma / quantidade);
+        double media = soma / quantidade;
+
+        DecimalFormat decimalFormat = new DecimalFormat("0.##");
+        String mediaString = decimalFormat.format(media);
+        mediaString = mediaString.replace(',','.');
+        
+        Double newmedia = Double.parseDouble(mediaString);
+        this.setMediaNotaTurma(newmedia);
          
     }
 
@@ -83,6 +89,8 @@ public class Turma {
 
     @Override
     public String toString() {
+
+    
         return "Turma [estudantes=" + estudantes + ", mediaNotaTurma=" + mediaNotaTurma + "]";
     }
 
